@@ -1,28 +1,35 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NaBaa</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NaBaa Name Meaning</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f0f8ff;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>NaBaa</h1>
-    <p>Discover the Bengali & Arabic meaning of any name</p>
-  </header>
-
-  <main>
-    <div class="input-area">
-      <input type="text" id="nameInput" placeholder="Enter a name..." />
-      <button onclick="showMeaning()">Get Meaning</button>
-    </div>
-    <div id="result">
-      <h2>Meaning:</h2>
-      <p id="meaningOutput">--</p>
-    </div>
-  </main>
+  <h1>NaBaa নামের অর্থ</h1>
+  <input type="text" id="nameInput" placeholder="নাম লিখুন...">
+  <button onclick="showMeaning()">অর্থ দেখুন</button>
+  <div id="result"></div>
 </body>
 </html>
